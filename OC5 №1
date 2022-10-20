@@ -1,0 +1,19 @@
+chislo= int(input(' введите число  '))
+schesl= int(input(' введите счисление 2 или 8  '))
+ch2=''
+ch8=''
+if schesl==2:
+    while chislo>0:
+        ch2 = str(chislo%2)+ ch2
+        chislo=chislo//2
+    print(ch2)
+
+if schesl==8:
+    while chislo>0:
+        ch8 = str(chislo%8)+ ch8
+        chislo=chislo//8
+    print(ch8)
+else:
+    print('неверная степень')
+
+'/// можно было сделать через bin , так будет короче '
