@@ -1,0 +1,12 @@
+def maxprem(local):
+    maxi = 0
+    for i in range(1,kol):
+        if (local[i] >= local[i-1]):
+            maxi = i
+    for i in range(maxi + 1, kolvo):
+        local[i] = 0
+        
+        kol = int(input('Введите  элементы'))
+        local = [float(i) for i in input('Введите числа ').split()]
+    print(local)
+    maxprem(local)
